@@ -1,5 +1,5 @@
 ## Interface: 11200
-## Title: QuickHeal - Jiyuni Fork
+## Title: |cffff33d4QuickHeal - |cff33ffccJiyuni
 ## Author: Jiyuni, ChatGPT, Thomas Thorsen, Scott Geeding and Kostas Karachalios
 ## Notes: One button removing skill from Paladin healing.
 ## OptionalDeps: BonusScanner,Titan Panel,myAddOns,CT_RaidAssist
