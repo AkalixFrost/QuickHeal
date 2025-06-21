@@ -83,6 +83,36 @@ function QuickHeal_Paladin_FindHealSpellToUseNoTarget(maxhealth, healDeficit, he
     return SpellID, HealSize;
 end
 
+function QuickHeal_Paladin_FindHoTSpellToUse(Target, healType, forceMaxRank)
+    local SpellID = nil;
+    local HealSize = 0;
+
+    local SpellIDsHS = QuickHeal_GetSpellIDs(QUICKHEAL_SPELL_HOLY_SHOCK);
+    local maxRankHS = table.getn(SpellIDsHS);
+
+    if maxRankHS >= 3 and UnitMana("player") >= 410 and SpellIDsHS[3] then
+        SpellID = SpellIDsHS[3];
+        HealSize = 500;
+    end
+
+    return SpellID, HealSize;
+end
+
+function QuickHeal_Paladin_FindHoTSpellToUseNoTarget(maxhealth, healDeficit, healType, multiplier, forceMaxHPS, forceMaxRank, hdb, incombat)
+    local SpellID = nil;
+    local HealSize = 0;
+
+    local SpellIDsHS = QuickHeal_GetSpellIDs(QUICKHEAL_SPELL_HOLY_SHOCK);
+    local maxRankHS = table.getn(SpellIDsHS);
+
+    if maxRankHS >= 3 and UnitMana("player") >= 410 and SpellIDsHS[3] then
+        SpellID = SpellIDsHS[3];
+        HealSize = 500;
+    end
+
+    return SpellID, HealSize;
+end
+
 function QuickHeal_Command_Paladin(msg)
 
     --if PlayerClass == "priest" then
@@ -166,6 +196,11 @@ function QuickHeal_Command_Paladin(msg)
     if cmd == "heal" then
         --writeLine(QuickHealData.name .. " HEAL", 0, 1, 0);
         QuickHeal();
+        return;
+    end
+
+    if cmd == "hot" then
+        QuickHOT();
         return;
     end
 
