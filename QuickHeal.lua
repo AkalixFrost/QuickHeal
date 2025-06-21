@@ -5,10 +5,10 @@ HealComm = AceLibrary("HealComm-1.0")
 
 --[ Mod data ]--
 QuickHealData = {
-    name = 'QuickHeal',
-    version = '1.17.6',
-    releaseDate = 'December 1st, 2022',
-    author = 'T. Thorsen, S. Geeding and K. Karachalios feat. Dispatchio',
+    name = 'QuickHeal - Jiyuni Ver',
+    version = '1.0',
+    releaseDate = 'June 20, 2025',
+    author = 'Jiyuni',
     website = 'https://turtle-wow.org/',
     category = MYADDONS_CATEGORY_CLASS
 }
@@ -24,12 +24,9 @@ local DQHV = { -- Default values
     DebugMode = false,
     PetPriority = 1,
     TargetPriority = false,
-    RatioForceself = 0.4,
-    RatioHealthyDruid = 0.4,
+    RatioForceself = 0.5,
     RatioHealthyPaladin = 0.1,
-    RatioHealthyPriest = 0.3,
-    RatioHealthyShaman = 0.6,
-    RatioFull = 0.9,
+    RatioFull = 0.98,
     NotificationStyle = "NORMAL",
     NotificationChannelName = "",
     NotificationWhisper = false,

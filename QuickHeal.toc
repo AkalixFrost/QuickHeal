@@ -1,7 +1,7 @@
 ## Interface: 11200
-## Title: QuickHeal
-## Author: Thomas Thorsen, Scott Geeding and Kostas Karachalios
-## Notes: Quick healing of party/raid members
+## Title: QuickHeal - Jiyuni Fork
+## Author: Jiyuni, ChatGPT, Thomas Thorsen, Scott Geeding and Kostas Karachalios
+## Notes: One button removing skill from Paladin healing.
 ## OptionalDeps: BonusScanner,Titan Panel,myAddOns,CT_RaidAssist
 ## SavedVariables: 
 ## SavedVariablesPerCharacter: QuickHealVariables
